@@ -1,0 +1,522 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin-top:auto;
+	margin-left:auto;
+/*	padding-top:auto;
+	padding-left:auto;*/
+	font-family: 'Karla', sans-serif;
+	font-size: 62.5%;}
+
+.container{
+	font-family: 'Karla', sans-serif;
+	font-size: 1em;
+	width: 100em;
+	min-width: 100em;
+	margin: 3% auto 5% auto;
+	padding-left: 1em;}
+
+#p_tag_container{
+	font-size: 1.5em;
+	line-height: 1.6em;}
+	
+#einleitung_start{
+	margin: 0 auto;
+	width: 25em;}
+	
+#einleitung_start2{
+	text-indent:1em;
+	margin: 0 auto;
+	width: 18em;}
+	
+h1{
+	font-size: 3.7em;
+	margin-top: 3%;}
+	
+h2{
+	font-size: 3.5em;}
+	
+h3{
+	font-size: 3em;}
+	
+h4{
+	font-size: 2.5em;}
+	
+h5{
+	font-size:2em;}
+
+h6{
+	font-size:1.5em;}
+
+/*################ Hauptpunkte nach Slider, zentriert mit Bilder ################*/
+.beschreibung_hauptkat{
+	font-size: 1.4em;
+	line-height: 1.6em;}
+
+.floating_beschreibung_div{
+	position: absolute;
+	top: 50%;}
+
+.floating_beschreibung_div div{
+	position: relative;
+	/*top: -50%;*/}
+
+/*################  Beschreibung Shopping  ################*/
+#rahmen_beschreibung_shopping{
+	height: 15em;
+	width: 64em;
+	margin: 8% auto;
+	text-decoration: none;}
+	
+#p_shopping_einleitung{
+	line-height: 1.6em;
+	font-size: 1.6em;}
+
+#img_shopping_normal{
+	float: left;
+	width: 15em;
+	height: 15em;
+	margin: 0 8em 0 0;
+	background-image: url(../images/symbol_shopping.png);
+	background-repeat: no-repeat;
+	border-radius: 1.3em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.6);}
+
+#img_shopping_normal:hover{
+	width: 15em;
+    height: 15em;
+	background-image: url(../images/symbol_shopping_blue.png)}
+
+#rahmen_beschreibung_shopping > #floating_beschreibung_shopping{
+	display: table;}
+
+#floating_beschreibung_shopping{
+	width: 40em;
+	height: 100%;
+	position: relative;}
+
+#floating_beschreibung_shopping > div{ 
+	display: table-cell;
+	vertical-align: middle;
+	position: static;}
+/*################  ENDE Beschreibung Shopping  ################*/
+/*################  Beschreibung Points of Interest  ################*/
+#rahmen_beschreibung_points{
+	height: 15em;
+	width: 64em;
+	margin: 8% auto;}
+
+#img_points_normal{
+	float: right;
+	width: 15em;
+	height: 15em;
+	margin: 0 1em 0 7em;
+	background-image: url(../images/symbol_points.png);
+	background-repeat: no-repeat;
+	border-radius: 1.3em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.6);}
+
+#img_points_normal:hover{
+	width: 15em;
+	height: 15em;
+	background-image: url(../images/symbol_points_blue.png);}
+
+#rahmen_beschreibung_points > #floating_beschreibung_points{
+	display: table;}
+
+#floating_beschreibung_points{
+	width: 40em;
+    height: 100%;
+	position: relative;}
+
+#floating_beschreibung_points > div{
+	display: table-cell;
+	vertical-align: middle;
+	position: static;}
+/*################  ENDE Beschreibung Points of Interest  ################*/
+/*################  Beschreibung Rezepte  ################*/
+#rahmen_beschreibung_rezepte{
+	height: 15em;
+	width: 64em;
+	margin: 8% auto;}
+
+#img_rezepte_normal{
+	float: left;
+	width: 15em;
+	height: 15em;
+	margin: 0 8em 0 0;
+	background-image: url(../images/symbol_rezepte.png);
+	background-repeat: no-repeat;
+	border-radius: 1.3em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.6);}
+
+#img_rezepte_normal:hover{
+	width: 15em;
+	height: 15em;
+	background-image: url(../images/symbol_rezepte_blue.png)}
+
+#rahmen_beschreibung_rezepte > #floating_beschreibung_rezepte{
+	display: table;}
+
+#floating_beschreibung_rezepte{
+	width: 40em;
+	height: 100%;
+	position: relative;}
+
+#floating_beschreibung_rezepte > div{
+	display: table-cell;
+	vertical-align: middle;
+	position: static;}
+/*################  ENDE Beschreibung Rezepte  ################*/
+
+.start_link_button_beschreibung{
+	text-decoration: none;
+	color: #000;}
+	
+/*################  ENDE Hauptpunkte nach Slider, zentriert mit Bilder  ################*/
+/*################  Shopping - Startseite  ################*/
+.shopping_content{
+	padding: 1em;
+	margin-bottom: 3em;
+	clear:both;}
+	
+.shopping_titel{
+	height: auto;
+	float:left;
+	font-size:1.2em;
+	margin-right:auto;
+	clear:right;}
+
+.rahmen_shopping{
+	width: 22em;
+	height: 26em;
+	margin: 10em 1.5em;
+	border-radius: 1em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,0.4);
+	float: left;}
+
+.img_shop_4pkt{
+	width: 22em;
+	height: 20em;
+	border-top-left-radius: 1em;
+	border-top-right-radius: 1em;}
+	
+.h2_beschreibung_shop_4pkt{
+	font-size: 3em;
+	margin-top: 0.3em;
+	text-align: center;}
+	
+.link_shopping_4pkt{
+	text-decoration: none;
+	color: #000;}
+
+/*################  ENDE Shopping - Startseite  ################*/
+/*################  Shopping - Kleidung  ################*/
+.shopping_kleid_titel{
+	clear:both;}
+
+.shopping_kleidung_img{
+	margin: 0.5em;
+	float: left;
+	width: 400px;
+	margin-bottom:auto;}
+
+.shoppping_bilder_links{
+	width:25em;}
+
+.shoppping_bilder_rechts{
+	margin-left:200px;}
+
+/*################  ENDE Shopping  - Kleidung ################*/
+/*################  Shopping - Baecker ################*/
+.shopping_begruessung{
+	font-size: 1.8em;
+	line-height: 1.3em;
+	clear: right;
+	text-align: center;
+	margin-bottom: 4.5em;}
+	
+#shopping_lieblingssuperm{
+	font-size: 1.8em;
+	clear: right;
+	text-align: center;
+	margin-bottom: 2em;}
+	
+.shopping_baeck_titel{
+	height: auto;
+	float:left;
+	font-size:1.2em;
+	margin-right:auto;}
+	
+.shop_baeck_h1{
+	font-size: 2.4em;
+	font-weight:bold;}
+
+.shop_baeck_h2{
+	font-size: 1.9em;
+	font-weight: bold;}
+
+.shop_baeck_h3{
+	font-size: 1.5em;
+	font-weight: bold;}
+
+.shopping_baeck_logo{
+	margin-top:1em;
+	height: auto;
+	font-size:1.2em;
+	margin-right:auto;
+	clear:inherit;}
+
+.shopping_baeck_detail{
+	height: auto;
+	font-size: 1.2em;
+	float:left;
+	clear:right;}
+
+.shopping_baeck_cont_main{
+	margin-left:0em;
+	margin-bottom: 7em;
+	float:left;
+	clear:right;}
+
+.shopping_baeck_cont_top{
+	margin-left: 0em;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float:left;
+	clear:both;}
+
+.shopping_baeck_cont_next{
+	margin-left: 0em;
+	padding: 1em;
+	padding-top: 1em;
+	padding-bottom: 0em;
+	float:left;
+	clear:left;}
+
+.shopping_baeck_anschrift{
+	clear:both;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float:left;
+	width: 19em;}
+
+.shopping_baeck_location{
+	height: auto;
+	clear: both;
+	font-size: 1.2em;
+	margin-bottom:8em;}
+
+.shopping_baeck_tage{
+	float:left;
+	width:10em;
+	margin-left: 2em;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	background: #F2F2F2;}
+
+.shopping_baeck_zeiten{
+	clear:right;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float: left;
+	background: #F2F2F2;}
+
+.shopping_baeck_img{
+	margin: 0.5em;
+	float: left;
+	width: auto;
+	margin-bottom:auto;}
+
+.shopping_baeck_img_locations{
+	float: left;
+	width: 18em;
+	height:auto;}
+
+.shopping_bild_rechts{
+	float: left;
+	width: 23em;
+	margin-left:4em}
+/*############## ENDE  Shopping - Baecker ##############*/
+/*################  Points of Interest - Karte  ################*/
+#img_karte_points{
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5em;
+	margin-bottom: 4em;
+	width: 55em;
+	height: 40em;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.4);}
+	
+#link_GoogleMap{
+	font-size: 1.2em;}
+
+#unterschrift_map_points{
+	font-size: 2em;
+	font-weight: bold;}
+
+.legende{
+	margin-right: 3em;
+	float: left;
+	font-size: 1.5em;}
+
+#leer{
+	clear: both;}
+/*################  ENDE Points of Interest - Karte  ################*/
+/*################  Points of Interest - Sehenswertes ################*/
+.points_sehens_img{
+	width: 50em;
+	height: 27em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.2);}
+/*################  ENDE Points of Interest - Sehenswertes ################*/
+/*################  Points of Interest - Freizeit ################*/
+.points_freiz_location{
+	height: 28em;
+	clear: both;
+	font-size: 1.2em;
+	padding-top: 0.2em;}
+
+.points_freiz_img{
+	width: 20em;
+	height: 10em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.2);}
+	
+#bodyfit_img{
+	margin-top: 6em;}
+
+.anschrift{
+	margin-left: 3em;
+	margin-right: 4em;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float: left;}
+
+.tage{
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float: left;
+	background: #F2F2F2;}
+
+.zeiten{
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float: left;
+	background: #F2F2F2;}
+
+.zusatz{
+	margin-left: 6em;
+	padding: 1em;
+	padding-top: 0em;
+	padding-bottom: 0em;
+	float: left;}
+/*################  ENDE Points of Interest - Freizeit  ################*/
+/*################  Points of Interest - Nachtleben ################*/
+.points_nachtl_img{
+	width: 20em;
+	height: 20em;
+	margin-bottom: 2em;
+	padding: 1em;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.2);}
+
+#points_cream{
+	background: #000000;}
+/*################  ENDE Points of Interest - Nachtleben ################*/
+
+.img_locations{
+	margin: 0.5em;
+	float: left;}
+
+#img_gemuese{
+	width: 30em;
+	height: 15em;
+	float: right;
+	margin: 1em 0 3em 4em;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.2);}
+
+#text_rezepte{
+	font-size: 1.5em;
+	margin-top: 4%;
+	line-height: 1.6em;}
+
+#liste_rezepte{
+	margin-top: 6em;
+	font-size: 1.5em;
+	line-height: 1.5em;}
+	
+#verantwortliche{
+	font-size:1.4em;}
+	
+.impressum{
+	font-size: 1.4em;
+	line-height: 1.6em;}
+
+#link_formular{
+	text-decoration: none;}
+
+.img_rezepte_unterseite{
+	width: 40em;
+	height: 36em;
+	float: right;
+	border-radius: 2em;
+	box-shadow: 0 0.5em 1em rgba(0,0,0,.4);}
+
+.div_table_rezepte{
+	margin-top: 2%;
+	height: 25em;
+	float: left;}
+
+.table_rezepte_unterseite{
+	font-size: 2em;
+	border: none;
+	float: left;
+	margin-right: 10%;
+	text-align: left;
+	width: 20em;}
+
+.zubereitung_rezepte{
+	margin-top: 20em;
+	font-size: 1.8em;
+	line-height: 1.6em;}
+
+/*################  Fomular - Kontakt  ################*/
+#formular_div{
+	margin-top: 6em;}
+
+form{
+	font-size: 1.8em;}
+
+fieldset{
+	padding: 2%;}
+
+.table_contact{
+	border: none;
+	border-spacing: 3em 0.8em;
+	margin-left: -3em;
+	margin-top: -0.8em;
+	margin-bottom: -0.8em;}
+
+.div_contact{
+	margin-top: 2em;}
+
+#pflichtfeld{
+	font-size: 0.7em;}
+
+#abschicken{
+	margin-top: 2em;}
+/*################  ENDE Fomular - Kontakt  ################*/

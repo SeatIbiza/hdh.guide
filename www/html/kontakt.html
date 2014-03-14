@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>HDH Guide - Kontakt</title>
+<link href='http://fonts.googleapis.com/css?family=Karla:400,700&amp;subset=latin-ext' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="../css/styles_header_footer.css">
+<link rel="stylesheet" type="text/css" href="../css/styles_main.css">
+</head>
+<body>
+<div class="root">
+	<div id="header">
+		<div id="logo_zitat">
+			<div id="logo">
+				<a href="http://www.hdh-guide.projekt.dhbw-heidenheim.de/"><img src="../images/logo.png" alt="Logo"></a>
+			</div>
+			<img src="../images/zitat.png" alt="Zitat" id="zitat">
+		</div>
+    </div><!-- ENDE "header" -->
+    <div id="menu">
+        <div id="container_menu">
+            <ul id="nav_menu">
+                <li><a href="../index.html">Startseite.</a>
+                    <ul>
+                        <li><a href="../index.html">Willkommen</a></li>
+                        <li><a href="startseite/ueber_uns.html">&Uuml;ber uns</a></li>
+                    </ul>
+                </li>
+                <li><a href="shopping/shopping.html">Shopping.</a>
+                    <ul>
+                        <li><a href="shopping/supermaerkte.html">Superm&auml;rkte</a></li>
+                        <li><a href="shopping/baecker.html">B&auml;cker</a></li>
+                        <li><a href="shopping/metzger.html">Metzger</a></li>
+                        <li><a href="shopping/kleidung.html">Kleidung</a></li>
+                    </ul>
+                </li>
+                <li><a href="points/points.html">Points of Interest.</a>
+                    <ul>
+                        <li><a href="points/sehenswertes.html">Sehenswertes</a></li>
+                        <li><a href="points/freizeit.html">Freizeit</a></li>
+                        <li><a href="points/nachtleben.html">Nachtleben</a></li>
+                    </ul>
+                </li>
+                <li><a href="rezepte/rezepte.html">Rezepte.</a>
+                    <ul>
+                        <li><a href="rezepte/pfannkuchen.html">Pfannkuchen</a></li>
+                        <li><a href="rezepte/nudelpfanne.html">Nudelpfanne</a></li>
+                        <li><a href="rezepte/mikrowellenkuchen.html">Mikrowellenkuchen</a></li>
+                    </ul>
+                </li>			
+            </ul><!-- ENDE "nav_menu" -->
+        </div><!-- ENDE "container_menu" -->
+    </div><!-- ENDE "menu" -->
+	<div class="container">
+        <h1>Kontaktformular</h1>
+        <p class="impressum">Fall Ihr besondere W&uuml;nsche oder weitere Anregungen f&uuml;r diese Seite habt, so teilt uns diese doch bitte mit.<br>
+        Wir freuen uns &uuml;ber jeden Verbesserungsvorschlag und sind f&uuml;r alles offen.</p>
+        <div id="formular_div">
+            <form action="http://www.cs.tut.fi/cgi-bin/run/~jkorpela/echo.cgi" method="post" enctype="text/plain" >
+                <fieldset>
+                <!--<legend>Formular</legend>-->
+                    <table class="table_contact">
+                        <tr>
+                            <td>Name *</td>
+                            <td>Vorname *</td>
+                            <td>Alter</td>
+                            <td>Geschlecht *</td>
+                        </tr>
+                        <tr>
+                            <td><input name="name" type="text" required size="20"></td>
+                            <td><input name="vorname" type="text" required size="20"></td>
+                            <td><input name="alter" type="text" pattern="[0-9]{1,3}" size="10"></td>
+                            <td>
+                                <select name="geschlecht" size="1">
+                                    <option selected>weiblich</option>
+                                    <option>m&auml;nnlich</option>
+                                </select>
+                            </td>
+                        </tr>
+                    </table>
+                    <div class="div_contact">
+                        <p>Betreff *</p>
+                        <input name="betreff" type="text" required size="100">
+                    </div>
+                    <div class="div_contact">
+                        <p>Kommentar (Bemerkungen, Verbesserungen, ...) *</p>
+                        <textarea name="kommentar" required cols="75" rows="10"></textarea>
+                    </div>
+						<p id="pflichtfeld">* Pflichtfelder</p>
+                </fieldset>
+                <input type="submit" value=" Abschicken " id="abschicken">
+            </form>
+    	</div>
+    </div><!-- ENDE "Container"-->
+	<div id="footer_bg">
+		<div id="footer">
+            <a href="impressum.html">Impressum</a>
+            <em class="footer_trennstrich">&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;</em>
+            <a href="kontakt.html" class="active1">Kontakt</a>
+        </div>
+    </div>
+</div><!-- ENDE root-->
+</body>
+</html>
