@@ -1,0 +1,591 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+body, html { font-size: 15px; padding: 0; margin: 0;}
+
+.clearfix:before, .clearfix:after { content: " "; display: table; }
+.clearfix:after { clear: both; }
+
+body {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	color: #89867e;
+	background: #f9f9f9;}
+
+a {
+	color: #333;
+	text-decoration: none;}
+
+a:hover {
+	color: #fff;}
+
+.main, .container > header {
+	width: 100%;
+	margin: 0 auto;
+	padding: 2em;}
+
+.main {
+	max-width: 82.667em;
+	min-height: 5em;}				/* Abstand des Smartphone-Menüs nach unten*/
+
+
+.container > header {
+	text-align: center;
+	font-size: 16px;
+	padding: 4em 2em 3em;
+	background: rgba(0,0,0,0.02);}
+
+.container > header h1 {
+	font-size: 2.625em;
+	line-height: 1.3;
+	margin: 0;
+	font-weight: 300;}
+
+.container > header span {
+	display: block;
+	font-size: 60%;
+	color: #ceccc6;
+	padding: 0 0 0.6em 0.1em;}
+
+
+@font-face {
+	font-family: 'icomoon';
+	src: url('../fonts/icomoon.eot');
+	src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;}
+
+/* Fix fuer Chrome "http://stackoverflow.com/questions/13674808/chrome-svg-font-rendering-breaks-layout/14345363#14345363" */
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+	@font-face {
+		font-family: 'icomoon';
+		src: url('../fonts/icomoon.svg#icomoon') format('svg');
+	};
+}
+
+.icon-team, .icon-rezepte, .icon-home, .icon-points, .icon-shopping, .icon-contact, .icon-menu {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;}
+
+/* Original *//*
+.icon-team:before {
+	content: "\e000";}
+*/
+/* Worked */
+.icon-team:before {
+	content: "\e000";}
+
+/* Original *//*
+.icon-rezepte:before {
+	content: "\e001";}
+/*
+/* Worked */
+.icon-rezepte:before {
+	content: "\e004";}
+
+.icon-home:before {
+	content: "\e002";}
+
+/* Original *//*
+.icon-points:before {	
+	content: "\e003";}
+*/
+/* Worked */
+.icon-points:before {
+	content: "\e000";}
+
+/* Original *//*
+.icon-shopping:before {
+	content: "\e004";}
+*/
+/*Worked*/
+.icon-shopping:before {
+	content: "\e001";}
+
+.icon-contact:before {
+	content: "\e005";}
+
+.icon-menu:before {
+	content: "\f0c9";}
+
+a, li {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);}
+
+/* Unterschiedliche Displaygroessen */
+.nav ul {
+	max-width: 1240px;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-size: 1.5em;
+	font-weight: 300;}
+
+.nav li span {
+	display: block;}
+
+.nav a {
+	display: block;
+	color: rgba(249, 249, 249, .9);
+	text-decoration: none;
+	-webkit-transition: color .5s, background .5s, height .5s;
+	-moz-transition: color .5s, background .5s, height .5s;
+	-o-transition: color .5s, background .5s, height .5s;
+	-ms-transition: color .5s, background .5s, height .5s;
+	transition: color .5s, background .5s, height .5s;}
+
+.nav i{					/* Hack fuer Chrome um Schrift anzupassen */
+	-webkit-transform: translate3d(0, 0, 0);
+	-moz-transform: translate3d(0, 0, 0);
+	-o-transform: translate3d(0, 0, 0);
+	-ms-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);}
+
+/* Hover-Effekt um Element hervor zu heben*/
+.no-touch .nav ul:hover a {
+	color: rgba(249, 249, 249, .5);}
+
+.no-touch .nav ul:hover a:hover {
+	color: rgba(249, 249, 249, 0.99);}
+
+/* Hintergrundfarben für einzelne Elemente */
+/* Neue Farben */
+.nav li:nth-child(6n+1) {
+	background: rgb(0, 160, 255);}		/*Orig-Farbe: rgb(208, 101, 3)*/
+
+.nav li:nth-child(6n+2) {
+	background: rgb(0, 136, 218);}		/*Orig-Farbe: rgb(233, 147, 26)*/
+
+
+.nav li:nth-child(6n+3) {
+	background: rgb(0, 112, 181);}		/*Orig-Farbe: rgb(22, 145, 190)*/
+
+.nav li:nth-child(6n+4) {
+	background: rgb(0, 88, 144);}		/*Orig-Farbe: rgb(22, 107, 162)*/
+
+.nav li:nth-child(6n+5) {
+	background: rgb(0, 64, 107);}		/*Orig-Farbe: rgb(27, 54, 71)*/
+
+.nav li:nth-child(6n+6) {
+	background: rgb(0, 40, 70);}		/*Orig-Farbe: rgb(21, 40, 54)*/
+
+/* Wenn Bildschirm größer 800px */
+@media (min-width: 65em) {
+	/* Liste zu horizonatem Menü */
+	.nav li {
+		float: left; 					/* Menü horizontal */
+		width: 16.6667%;				/* original mit 6 Elementen */
+		text-align: center;
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;}
+
+	.nav a {
+		display: block;
+		width: auto;}
+
+	/* Höhe der Elemente bei großem Display */
+	.nav a {
+		height: 7em;}
+
+	/* Symbole platzieren */ 
+	.icon {
+		padding-top: 1em;}
+
+	/*
+	.icon + span {
+		margin-top: 0.7em;
+		-webkit-transition: margin .5s;
+		-moz-transition: margin .5s;
+		-o-transition: margin .5s;
+		-ms-transition: margin .5s;
+		transition: margin .5s;}
+	*/
+	/* Symbole platzieren und animieren vorbereiten */
+	.nav i {
+		position: relative;
+		display: inline-block;
+		margin: 0 auto;
+		padding: 0.4em;
+		border-radius: 50%;
+		font-size: 1.8em;
+		box-shadow: 0 0 0 30px transparent;
+		/*background: rgba(255,255,255,0.1);*/					/* Kreis hinter Symbolen */
+		/*-webkit-transform: translate3d(0, 0, 0);
+		-moz-transform: translate3d(0, 0, 0);
+		-o-transform: translate3d(0, 0, 0);
+		-ms-transform: translate3d(0, 0, 0);
+		transform: translate3d(0, 0, 0);
+		-webkit-transition: box-shadow .6s ease-in-out;
+		-moz-transition: box-shadow .6s ease-in-out;
+		-o-transition: box-shadow .6s ease-in-out;
+		-ms-transition: box-shadow .6s ease-in-out;
+		transition: box-shadow .6s ease-in-out;*/}
+	
+	/* Schatten und Effekt */
+	/*
+	.no-touch .nav a:hover i,
+	.no-touch .nav a:active i,
+	.no-touch .nav a:focus i {		
+		box-shadow: 0 0 0 0 rgba(255,255,255,0.2);
+		-webkit-transition: box-shadow .4s ease-in-out;
+		-moz-transition: box-shadow .4s ease-in-out;
+		-o-transition: box-shadow .4s ease-in-out;
+		-ms-transition: box-shadow .4s ease-in-out;
+		transition: box-shadow .4s ease-in-out;
+	}
+	*/	
+}
+
+/* Version für Tablet und Smartphone */
+@media (max-width: 51.132em) {		
+	/* Hintergrundfarbe der Elemente wenn hover */
+	.no-touch .nav ul li:nth-child(6n+1) a:hover,
+	.no-touch .nav ul li:nth-child(6n+1) a:active,
+	.no-touch .nav ul li:nth-child(6n+1) a:focus {
+		/*background: rgb(227, 119, 20);*/		/* Original */
+		background: rgb(0, 160, 255);}			/* Neue Farben */
+
+	.no-touch .nav li:nth-child(6n+2) a:hover,
+	.no-touch .nav li:nth-child(6n+2) a:active,
+	.no-touch .nav li:nth-child(6n+2) a:focus {
+		/*background: rgb(245, 160, 41);*/		/* Original */
+		background: rgb(0, 136, 218);}			/* Neue Farben */
+
+	.no-touch .nav li:nth-child(6n+3) a:hover,
+	.no-touch .nav li:nth-child(6n+3) a:active,
+	.no-touch .nav li:nth-child(6n+3) a:focus {
+		/*background: rgb(44, 168, 219);*/		/* Original */
+		background: rgb(0, 112, 181);}			/* Neue Farben */
+
+	.no-touch .nav li:nth-child(6n+4) a:hover,
+	.no-touch .nav li:nth-child(6n+4) a:active,
+	.no-touch .nav li:nth-child(6n+4) a:focus {
+		/*background: rgb(31, 120, 176);*/		/* Original */
+		background: rgb(0, 88, 144);}			/* Neue Farben */
+
+	.no-touch .nav li:nth-child(6n+5) a:hover,
+	.no-touch .nav li:nth-child(6n+5) a:active,
+	.no-touch .nav li:nth-child(6n+5) a:focus {
+		/*background: rgb(39, 70, 90);*/		/* Original */
+		background: rgb(0, 64, 107);}			/* Neue Farben */
+
+	.no-touch .nav li:nth-child(6n+6) a:hover,
+	.no-touch .nav li:nth-child(6n+6) a:active,
+	.no-touch .nav li:nth-child(6n+6) a:focus {
+		/*background: rgb(32, 54, 68);*/		/* Original */
+		background: rgb(0, 40, 70);}			/* Neue Farben */
+
+	.nav ul li {
+		-webkit-transition: background 0.5s;
+		-moz-transition: background 0.5s;
+		-o-transition: background 0.5s;
+		-ms-transition: background 0.5s;
+		transition: background 0.5s;}
+}
+
+/* 3 Elemente nebeneinander, 2 untereinander */
+@media (min-width: 51.133em) and (max-width: 64.975em) {
+	/* 3 Spalten erstellen */
+	.nav li {
+		display: block;
+		float: left;
+		width: 33.3333%;}
+	
+	/* Abstand (und Höhe) der Elemente */
+	.nav a {
+		padding: 0.8em;}
+
+	/* Icons links und Text rechts ausrichten*/
+	.nav li span, .nav li span.icon {
+		display: inline-block;}
+
+	.nav li span.icon {
+		width: 40%;}
+
+	.nav li .icon + span {
+		font-size: 1.2em;}
+
+	.icon + span {
+		position: relative;
+		top: -0.2em;}
+
+	/* Kreise um Symbole */
+	.nav li i {
+		display: inline-block;
+		padding: 8% 8%;
+		border: 4px solid transparent;
+		border-radius: 50%;
+		font-size: 1.5em;
+		background: rgba(255,255,255,0.1);
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;}
+}
+
+/* 2 Elemente nebeneinander, 3 untereinander */
+@media (min-width:32.5em) and (max-width: 51.132em) {
+	/* 2 Spalten erstellen */
+	.nav li {
+		display: block;
+		float: left;
+		width: 50%;}
+	
+	/* Abstand (und Höhe) der Elemente */
+	.nav a {
+		padding: 0.8em;}
+
+	/* Icons links und Text rechts ausrichten*/
+	.nav li span, 
+	.nav li span.icon {
+		display: inline-block;}
+
+	.nav li span.icon {
+		width: 50%;}
+
+	.nav li .icon + span {
+		font-size: 1em;}
+
+	.icon + span {
+		position: relative;
+		top: -0.2em;}
+
+	/* Kreise um Symbole */
+	.nav li i {
+		display: inline-block;
+		padding: 8% 8%;
+		border: 4px solid transparent;
+		border-radius: 50%;
+		font-size: 1.5em;
+		background: rgba(255,255,255,0.1);
+		-webkit-transition: border .5s;
+		-moz-transition: border .5s;
+		-o-transition: border .5s;
+		-ms-transition: border .5s;
+		transition: border .5s;}
+}
+
+/* Schrift und Symbole für schmalere Displays kleiner */
+@media (min-width: 32.5em) and (max-width: 38.688em) {
+	.nav li span.icon {
+		width: 40%;}
+
+	.nav li .icon + span {
+		font-size: 1em;}
+}
+
+
+/* Menü für Smartphones gestalten */
+	.nav .navtoogle{
+	display: none;	
+	width: 100%;
+	padding: 0.5em 0.5em 0.8em;
+	font-family: 'Lato',Calibri,Arial,sans-serif;
+	font-weight: normal;
+	text-align: left;
+	color: rgb(7, 16, 15);
+	font-size: 1.2em;
+	background: none;	
+	border: none;
+	border-bottom: 4px solid rgb(221, 221, 221);
+	cursor: pointer;}
+
+	.navtoogle i{
+	z-index: -1;}
+
+	.icon-menu {
+	position: relative;
+	top: 3px;
+	line-height: 0;
+	font-size: 1.6em;}
+
+@media \\0 screen and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1), 	/* "\\ 0" Hack für Chrome */
+	screen and (orientation: portrait) and (min-resolution: 180dpi),   
+	screen and (orientation: portrait) and (min-moz-device-pixel-ratio: 1),
+	screen and (orientation: portrait) and (-o-min-device-pixel-ratio: 1),
+	screen and (orientation: portrait) and (min-device-pixel-ratio: 1) {
+	.nav .navtoogle{
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		font-size: 4em;}
+	
+	.icon-menu {
+		font-size: 1.2em;}
+	
+	/* Einblenden des Smartphone-Menüs */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS deativiert */
+	.no-js .nav ul {
+		max-height: 50em;
+		overflow: hidden;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS ativiert */
+	.js .nav ul {
+		max-height: 0em;
+		overflow: hidden;}
+	
+	/* Menü aufklappen, wenn Button geklickt */
+	.js .nav .active + ul {		
+		max-height: 50em;
+		overflow: hidden;
+		-webkit-transition: max-height .4s;
+		-moz-transition: max-height .4s;
+		-o-transition: max-height .4s;
+		-ms-transition: max-height .4s;
+		transition: max-height .4s;}
+
+	/* Anpassen des Menüs für kleine Displays - Icon links, Text rechts */
+	.nav li span {
+		display: inline-block;
+		height: 100%;
+		padding: 0.5em 0em 0.5em 1em;}
+
+	.nav a {
+		padding: 0.5em;}
+		
+	/* Für Touch nav größer */
+	.touch .nav a {
+		padding: 0.8em;}
+		
+	/* 1 Spalte erstellen */
+	.nav li {
+		width: 100%;}
+	
+	/* Breite des Icons anpassen (Abstand rechts und links vom Icon)*/
+	.nav li span.icon {
+		width: 15%;}
+
+	.nav li .icon + span {
+		font-size: 2.5em;}
+
+	/* Kreise um Symbole anpassen */
+	.nav li i {
+		padding: 8% 8%;
+		font-size: 4em;}
+}
+
+
+@media \\0 screen and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 1), 	/* "\\ 0" Hack für Chrome */
+	screen and (orientation:landscape) and (min-resolution: 180dpi),   
+	screen and (orientation:landscape) and (min-moz-device-pixel-ratio: 1),
+	screen and (orientation:landscape) and (-o-min-device-pixel-ratio: 1),
+	screen and (orientation:landscape) and (min-device-pixel-ratio: 1) {
+	.nav .navtoogle{
+		padding: 0.5em 0.5em 0.5em 0.5em;
+		font-size: 2em;}
+	
+	.icon-menu {
+		font-size: 1.2em;}
+	
+	/* Einblenden des Smartphone-Menüs */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS deativiert */
+	.no-js .nav ul {
+		max-height: 30em;
+		overflow: hidden;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS ativiert */
+	.js .nav ul {
+		max-height: 0em;
+		overflow: hidden;}
+	
+	/* Menü aufklappen, wenn Button geklickt */
+	.js .nav .active + ul {		
+		max-height: 50em;
+		overflow: hidden;
+		-webkit-transition: max-height .4s;
+		-moz-transition: max-height .4s;
+		-o-transition: max-height .4s;
+		-ms-transition: max-height .4s;
+		transition: max-height .4s;}
+
+	/* Anpassen des Menüs für kleine Displays - Icon links, Text rechts */
+	.nav li span {
+		display: inline-block;
+		height: 100%;
+		padding: 0.2em 0em 0.1em 1em;}
+
+	.nav a {
+		padding: 0em;}
+		
+	/* Für Touch nav größer */
+	.touch .nav a {
+		padding: 0.2em;}			/* Höhe des aufklappendes Menüs (samt Icon) */
+		
+	/* 1 Spalte erstellen */
+	.nav li {
+		width: 100%;}
+	
+	/* Breite des Icons anpassen (Abstand rechts und links vom Icon)*/
+	.nav li span.icon {
+		width: 8%;}
+
+	.nav li .icon + span {
+		font-size: 1.5em;}			/* Schriftgröße der Unterpunkte */
+
+	/* Kreise um Symbole anpassen */
+	.nav li i {
+		padding: 8% 8%;
+		font-size: 1.8em;}			/* Schriftgröße und Icongröße der Unterpunkte */
+}
+
+
+/* Für kleine Displays aufklappendes Menü */
+@media (max-width: 32.499em) {
+	/* Einblenden des Smartphone-Menüs */
+	.nav .navtoogle{
+		margin: 0;
+		display: block;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS deativiert */
+	.no-js .nav ul {
+		max-height: 30em;
+		overflow: hidden;}
+	
+	/* Aufklappendes Menü verstecken, wenn JS ativiert */
+	.js .nav ul {
+		max-height: 0em;
+		overflow: hidden;}
+	
+	/* Menü aufklappen, wenn Button geklickt */
+	.js .nav .active + ul {		
+		max-height: 30em;
+		overflow: hidden;
+		-webkit-transition: max-height .4s;
+		-moz-transition: max-height .4s;
+		-o-transition: max-height .4s;
+		-ms-transition: max-height .4s;
+		transition: max-height .4s;}
+
+	/* Anpassen des Menüs für kleine Displays - Icon links, Text rechts */
+	.nav li span {
+		display: inline-block;
+		height: 100%;}
+
+	.nav a {
+		padding: 0.5em;}
+	
+	.icon + span {
+		margin-left: 1em;
+		font-size: 0.8em;}
+
+	/* make the nav bigger on touch screens */
+	.touch .nav a {
+		padding: 0.8em;}
+}
